@@ -1,0 +1,46 @@
+$select-dropdown-padding: $form-input-padding;
+
+.select-dropdown {
+    position: relative;
+    // display: inline-block;
+}
+
+
+.select-dropdown-select {
+    position: absolute;
+    z-index: 2;
+    top: 0;left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+.select-dropdown-toggle {
+
+    //position: relative;
+    //z-index: 2;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.1;
+    padding: $select-dropdown-padding;
+    border: $border-input;
+    
+    @include transition(background-color);
+}
+
+.select-dropdown-label {
+    
+}
+
+
+@include screen($bp-mobile) {
+    .select-dropdown-toggle {
+        
+    }   
+}

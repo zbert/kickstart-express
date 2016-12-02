@@ -1,0 +1,84 @@
+/*========================================
+=            Layout Variables            =
+========================================*/
+$site-padding: px-to-em($site-padding);
+$max-width: px-to-em($site-max-width) + ($site-padding * 2);
+
+$content-max-width: px-to-em($content-max-width) + ($site-padding * 2);
+
+$site-padding-mobile: px-to-em($site-padding-mobile-px);
+
+//conversion to ems
+$section-spacing: px-to-em($section-spacing-px);
+$section-spacing-small: px-to-em($section-spacing-small-px);
+$section-spacing-large: px-to-em($section-spacing-large-px);
+$section-spacing-largest: px-to-em($section-spacing-largest-px);
+
+$section-spacing-mobile: px-to-em($section-spacing-mobile-px);
+$section-spacing-large-mobile: px-to-em($section-spacing-large-mobile-px);
+
+$element-spacing:  px-to-em($element-spacing-px);
+$element-spacing-small:   px-to-em($element-spacing-small-px);
+
+$section-spacing-mobile: $section-spacing * 0.75;
+
+@mixin page-wrapper {
+	max-width: $max-width;
+	padding-left: $site-padding;
+	padding-right: $site-padding;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include screen($bp-tablet) {
+		padding-left: $site-padding-mobile;
+		padding-right: $site-padding-mobile;
+	}
+}
+
+.page-wrapper {
+	@include page-wrapper;
+}
+
+@mixin content-wrapper {
+	max-width: $content-max-width;
+	padding-left: $site-padding;
+	padding-right: $site-padding;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include screen($bp-tablet) {
+		padding-left: $site-padding-mobile;
+		padding-right: $site-padding-mobile;
+	}
+}
+
+.page-wrapper {
+	@include page-wrapper;
+}
+
+.content-wrapper {
+	@include content-wrapper;
+}
+
+//use this if you need top and bottom spacing, but not a wrapper
+.page-layout-spacing {
+	//padding-top:$section-spacing-large;
+	//margin-bottom: $section-spacing-largest;	
+}
+
+body {
+	//spacing block for fixed site header
+	// &:before {
+	// 	content: '';
+	// 	display: block;
+	// 	padding-top:  px-to-em($site-header-height);
+	// }
+}
+
+@include screen($bp-mobile) {
+	body {
+		// &:before {
+		// 	padding-top: px-to-em($site-header-height-mobile);
+		// }	
+	}
+}

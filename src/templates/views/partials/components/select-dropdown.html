@@ -1,0 +1,19 @@
+
+
+<label for="field-{{name}}" class="select-dropdown-label">{{fieldLabel}}</label>
+<div class="select-dropdown js-select-dropdown {{modifierClass}}">
+
+	<select aria-label="Selecting an option will conduct a search" id="field-{{name}}" class="select-dropdown-select" name="{{name}}">
+	{{#each selectOptions}}
+		<option value="value-{{@index}}">{{value}}</option>
+	{{/each}}
+	</select>
+
+	<span role="button" for="field-{{name}}" class="select-dropdown-toggle">
+	{{#if defaultSelection}}
+		{{defaultSelection}}
+	{{else}}
+		Select
+	{{/if}}
+	</span>
+</div>

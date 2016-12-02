@@ -1,0 +1,74 @@
+
+.rte {
+	$blockquote-size: 32px;
+	$highlight-link-size: 32px;
+
+	@include font-size-copy-text();
+
+	strong {
+		font-family: $font-family-copy;
+		font-weight: bold;
+	}
+
+	a {
+		color: $color-link;
+
+		&:hover {
+			color: $color-link-hover;
+		}
+	}
+
+	em {
+		font-style: italic;
+	}
+	
+	ul,ol,p,
+	img,
+	blockquote,
+	address {
+		margin-bottom:  px-to-em($element-spacing-px, $font-size-copy);
+
+		 &:last-child {
+        	margin-bottom: 0;
+    	}
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	ul,ol {
+		padding-left: 1.15em;
+	}
+
+	li {
+		margin-bottom: px-to-em($element-spacing-small-px, $font-size-copy);
+	}
+
+
+
+	h2 {
+		//margin-bottom: px-to-em($element-spacing-px, $font-size-h2);
+		//margin-top: px-to-em($section-spacing-px, $font-size-h2);
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	h3 {
+		//margin-bottom: px-to-em($element-spacing-px, $font-size-h3);
+	}
+
+	blockquote,
+	.blockquote {
+
+	}
+}
+
+@include screen($bp-mobile) {
+
+	.rte {
+		font-size: px-to-em($font-size-copy-mobile);
+	}
+}

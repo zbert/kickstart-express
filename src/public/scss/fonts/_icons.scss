@@ -1,0 +1,96 @@
+$icon-twitter: "\f099";
+$icon-facebook: "\f09a";
+$icon-linkedin: "\f0e1";
+$icon-search: "\eb19";
+$icon-chevron-bottom: "\f091";
+$icon-chevron-left: "\f092";
+$icon-chevron-right: "\f093";
+$icon-cross: "\eae3";
+$icon-minus: "\eb03";
+$icon-plus: "\eb0a";
+$icon-pdf: "\e902";
+$icon-vcard: "\e903";
+$icon-share: "\e907";
+$icon-chevron-down-alt: "\e904";
+$icon-chevron-up: "\e905";
+$icon-email: "\e906";
+$icon-download: "\e908";
+$icon-up-arrow: "\e909";
+$icon-location: "\e90b";
+$icon-quotation-mark: "\e90a";
+$icon-envelope:"\e90c";
+$icon-phone:"\e90d";
+$icon-close:"\e90e";
+$icon-upward-arrow:"\e90f";
+$icon-video: "\ea15";
+$icon-user: "\e910";
+
+.#{$ico-css-prefix}-upward-arrow:before {
+  content: "\e90f";
+}
+.#{$ico-css-prefix}-external:before {
+  content: "\e900";
+}
+.#{$ico-css-prefix}-lock:before {
+  content: "\e901";
+}
+.#{$ico-css-prefix}-twitter:before {
+  content: "\f099";
+}
+.#{$ico-css-prefix}-facebook:before {
+  content: "\f09a";
+}
+.#{$ico-css-prefix}-linkedin:before {
+  content: "\f0e1";
+}
+.#{$ico-css-prefix}-search:before {
+  content: "\eb19";
+}
+.#{$ico-css-prefix}-chevron-bottom:before {
+  content: "\f091";
+}
+.#{$ico-css-prefix}-chevron-left:before {
+  content: "\f092";
+}
+.#{$ico-css-prefix}-chevron-right:before {
+  content: "\f093";
+}
+.#{$ico-css-prefix}-cross:before {
+  content: "\eae3";
+}
+.#{$ico-css-prefix}-minus:before {
+  content: "\eb03";
+}
+.#{$ico-css-prefix}-plus:before {
+  content: "\eb0a";
+}
+.#{$ico-css-prefix}-pdf:before {
+  content: "\e902";
+}
+.#{$ico-css-prefix}-vcard:before {
+  content: "\e903";
+}
+.#{$ico-css-prefix}-share:before {
+  content: "\e907";
+}
+.#{$ico-css-prefix}-chevron-down-alt:before {
+  content: "\e904";
+}
+.#{$ico-css-prefix}-chevron-up:before {
+  content: "\e905";
+}
+.#{$ico-css-prefix}-email:before {
+  content: "\e906";
+}
+.#{$ico-css-prefix}-download:before {
+  content: "\e908";
+}
+.#{$ico-css-prefix}-up-arrow:before {
+  content: "\e909";
+}
+.#{$ico-css-prefix}-location:before {
+  content: "\e90b";
+}
+.#{$ico-css-prefix}-envelope:before {
+  content: "\e90c";
+}

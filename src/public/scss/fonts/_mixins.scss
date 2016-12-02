@@ -1,0 +1,63 @@
+// Mixins
+// --------------------------
+
+@mixin ico-icon() {
+  display: inline-block;
+  font-family: $ico-icon-name;
+  font-size: inherit;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@mixin ico-icon-before($icon-type) {
+
+  &:before {
+    content: $icon-type;
+    display: inline-block;
+    font-family: $ico-icon-name ;
+    font-size: inherit;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @content;
+  }
+}
+
+@mixin ico-icon-after($icon-type) {
+
+  &:after {
+    content: $icon-type;
+    display: inline-block;
+    font-family: $ico-icon-name ;
+    font-size: inherit;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @content;
+  }
+}

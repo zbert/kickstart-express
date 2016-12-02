@@ -1,0 +1,22 @@
+<nav role="navigation" aria-hidden="true" class="breadcrumbs js-breadcrumbs">
+
+	<ul class="breadcrumbs-options">
+
+		<li class="breadcrumbs-item">
+			<a title="navigate to homepage" class="breadcrumbs-title ico-{{icon}}" href="/home.html">Home</a> /
+		</li>
+
+		{{#each breadcrumbOptions}}
+			<li class="breadcrumbs-item">
+				{{#if @last}}
+					<span class="breadcrumbs-title" href="#0">{{titleLabel}}</span>
+
+					{{else}}
+					<a title="navigate to {{titleLabel}}" class="breadcrumbs-title" href="{{url}}">{{titleLabel}}</a> /
+				{{/if}}
+			</li>
+		{{/each}}
+
+	</ul>
+
+</nav>

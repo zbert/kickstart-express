@@ -1,0 +1,118 @@
+///////////////////////////////////////////////////////////////////////////////
+//  Fonts
+///////////////////////////////////////////////////////////////////////////////
+//
+//   Fonts: Univers
+//   List Font families here
+///////////////////////////////////////////////////////////////////////////////
+
+$font-family-primary:  $font-family-univers-condensed; 
+$font-family-copy:  'Arial', sans-serif; 
+
+
+//copy
+$font-size-h1: 56px;
+$font-size-h2: 52px;
+$font-size-h3: 32px;
+$font-size-h4: 24px;
+$font-size-h5: 20px;
+//copy-mobile
+$font-size-h1-mobile: 40px;
+$font-size-h2-mobile: 36px;
+$font-size-h3-mobile: 24px;
+$font-size-h4-mobile: 18px;
+$font-size-h5-mobile: 16px;
+
+
+//module font sizes
+$section-heading-size: 52px;
+$section-heading-mobile-size: 36px;
+
+$font-size-subheading: 40px;
+$font-size-buttons: 24px;
+
+$font-size-subheading-mobile: 30px;
+$font-size-buttons-mobile: 18px;
+
+
+@mixin font-univers-condensed($font-size: null, $base-size: null){
+    font-family: $font-family-univers-condensed;
+
+    @if ($font-size != null){
+        @include font-size($font-size, $base-size);
+    }
+}
+
+
+@mixin font-size-buttons () {
+    //@include font-univers-condensed-bold($font-size-buttons);
+
+    line-height: 1.1;
+
+    @include screen($bp-mobile) {
+        //font-size: px-to-em($font-size-buttons-mobile);
+    }
+}
+
+@mixin font-size-copy-text () {
+    font-family: $font-family-copy;
+    font-size: px-to-em($font-size-copy);
+
+    @include screen($bp-mobile) {
+        font-size: px-to-em($font-size-copy-mobile);
+    }
+}
+
+
+body {
+    font-size: 100%;
+    font:normal 100% $font-family-primary, Arial, sans-serif;
+    line-height: 1.15;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: $color-text-copy;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1 {
+    font-size: px-to-em($font-size-h1);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: px-to-em($font-size-h2);
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: px-to-em($font-size-h3); 
+}
+
+h4 {
+    font-size: px-to-em($font-size-h4); 
+}
+
+h5 {
+    font-size: px-to-em($font-size-h5); 
+}
+
+$section-heading-spacing: 32px;
+
+.section-heading {
+    //@include font-univers-condensed-light($section-heading-size);
+    
+    line-height: 1.1;
+    margin-bottom: px-to-em($section-heading-spacing, $section-heading-size);
+}
+
+@include screen($bp-mobile) {
+    .section-heading {
+        font-size: px-to-em($section-heading-mobile-size);
+    }
+}

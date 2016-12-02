@@ -1,0 +1,20 @@
+//Brand colors
+$color-brand-black: #1b1b1b;
+$color-brand-white: #fff;
+$color-brand-gray:  #d9d9d9;
+
+//opaque
+$color-opaque-black: rgba(27,27,27, .9);
+
+//text colors
+$color-text-body:  				$color-brand-black;
+$color-text-gray: 				#626262;
+$color-text-gray-soft:			#9B9B9B;
+
+
+//context color assignments
+$color-link: $color-brand-black;
+$color-link-hover: $color-brand-gray;
+
+//component colors
+$color-border:#a4a4a4;

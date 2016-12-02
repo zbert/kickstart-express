@@ -1,0 +1,20 @@
+.site-header {
+	height: px-to-em($site-header-height);
+}
+
+.site-logo {
+	width: px-to-em(204px);
+	display: inline-block;
+}
+
+.site-logo-img {
+	display: block;
+	width: 100%;
+}
+
+
+@include screen($bp-mobile) {
+	.site-header {
+		height: px-to-em($site-header-height-mobile);
+	}
+}

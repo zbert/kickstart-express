@@ -1,0 +1,25 @@
+
+
+<header class="site-header js-site-header {{#if breadcrumbs}}site-header--perspective{{/if}}">
+
+	<a class="site-logo" href="/">
+		<img alt="{{@root.site.firmFullName}}" class="site-logo-img" src="{{@root.site.siteLogoUrl}}">
+	</a>
+
+	<div class="site-header-utility">
+
+		<div class="site-header-firm-label">
+			<span  class="site-header-firm-name">{{@root.site.firmFullName}}</span>
+		</div>
+
+		{{#if breadcrumbs}}
+			{{> components/breadcrumbs breadcrumbs }}
+		{{/if}}
+
+	</div>
+
+	<!-- {{> components/site-search-toggle}} -->
+
+	{{> components/menu-toggle}}
+
+</header>

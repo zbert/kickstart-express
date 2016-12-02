@@ -1,0 +1,65 @@
+
+//$border-dark: 1px solid $color-border-dark;
+
+* {
+    @include borderBox;
+
+    &:before,
+    &:after{
+        @include borderBox;
+    }
+}
+
+figure {
+	margin: 0;
+}
+
+main {
+    display: block;
+}
+
+a {
+	color: inherit;
+    text-decoration: none;
+
+    @include transition(color);
+
+    // &:focus {
+    //     outline: thin dotted $color-brand-red;
+    // }
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+    margin:0 0  px-to-em($element-spacing-px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// address,
+// em {
+//     font-style: normal;
+// }
+
+// em {
+//     //@include font-univers-condensed-oblique();
+// }
+
+// strong,
+// b {
+//     font-weight: normal;
+
+//     //@include font-univers-condensed-bold();
+// }

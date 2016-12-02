@@ -1,0 +1,37 @@
+$searchbox-padding: px-to-em(20px);
+
+.searchbox {
+	position: relative;
+	border: 1px solid $color-border;	
+}
+
+.searchbox-input {
+
+	@include placeholder {
+		//color: $color-brand-black;
+		opacity: 1;
+	}
+}
+
+.searchbox-btn {
+	position: absolute;
+	//right: $searchbox-padding;
+	top: 0;
+	height: 100%;
+
+	// @include ico-icon-before($icon-search) {
+	// }
+}
+
+
+
+//modifieers
+// .searchbox--large {
+	
+// }
+
+// @include screen($bp-mobile) {
+// 	// .searchbox--large {
+// 	// 	padding: $section-spacing-small;
+// 	// }	
+// }

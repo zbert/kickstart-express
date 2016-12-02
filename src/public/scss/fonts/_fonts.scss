@@ -1,0 +1,33 @@
+@mixin font-size($font-size, $base-size){
+    @if ($base-size == null) {
+        font-size: px-to-em($font-size);
+    }
+
+    @else {
+        font-size: px-to-em($font-size, $base-size);
+    }
+}
+
+/*==================================
+=            Mixin Helpers             =
+==================================*/
+
+@mixin font-face-family($font-family, $file-path, $font-weight, $font-style) {
+    @font-face {
+        font-family: $font-family;
+        src: url('#{$file-path-fonts}#{$file-path}.eot');
+        src: url('#{$file-path-fonts}#{$file-path}.eot?#iefix') format('embedded-opentype'),
+            url('#{$file-path-fonts}#{$file-path}.woff') format('woff'),
+            url('#{$file-path-fonts}#{$file-path}.woff2') format('woff2'),
+            url('#{$file-path-fonts}#{$file-path}.ttf') format('truetype');
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
+}
+
+
+/*==================================
+=            Load Fonts Here            =
+==================================*/
+
+//@include font-face-family($font-family-univers-condensed-oblique, "31E031_0_0", normal, normal);

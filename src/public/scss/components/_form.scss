@@ -1,0 +1,23 @@
+$border-input: 1px solid $color-border;
+
+$form-input-padding: 20px;
+$form-label-font-size: 18px;
+$form-input-font-size-mobile: 20px;
+
+$font-size-form-label: 19px;
+
+fieldset {
+	border: 0 none;
+	padding: 0;
+}
+
+input,
+.input,
+textarea {
+	border: $border-input;
+}
+
+
+.form-field {
+	
+}

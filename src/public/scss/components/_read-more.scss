@@ -1,0 +1,34 @@
+.read-more-intro {
+	//padding-bottom: px-to-em($section-spacing-px, $font-size-copy)
+}
+
+.read-more-full {
+	display: none;
+	overflow: hidden;
+	//padding-bottom: px-to-em($section-spacing-px, $font-size-copy)
+}
+
+.read-more-toggle {
+	// position: relative;
+	// margin: 0 auto;
+	// display: block;
+
+	// @include ico-icon-after($icon-plus) {
+	// 	@include transition(transform);
+
+ //        font-size: 0.65em;
+ //        margin-left: 0.5em;
+ //        vertical-align: top;
+ //        line-height: 1.35; // 1 + (1 - font-size) to keep it centered
+
+ //    }
+
+ //    &.is-expanded  {
+ //        color: $color-text-body;
+
+
+ //        &:after {
+ //            transform: rotate(135deg);
+ //        }
+ //    }
+}

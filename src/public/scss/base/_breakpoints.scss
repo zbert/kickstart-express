@@ -1,0 +1,51 @@
+//  Brandon Mathis Media Queries
+///////////////////////////////////////////////////////////////////////////////
+//
+//	http://codepen.io/imathis/pen/BDzcI
+//
+//  You should use the Breakpoint Aliases (below) when referencing media query
+//  breakpoints with your custom CSS
+//
+//	Breakpoint Values
+//	http://www.paintcodeapp.com/news/iphone-6-screens-demystified
+///////////////////////////////////////////////////////////////////////////////
+
+$bp-desktop-large: 1200px;
+$bp-desktop: 1025px;
+$bp-tablet: 960px;
+$bp-mobile: 768px;
+$bp-mobile-landscape: 630px;
+$bp-mobile-portrait: 420px;
+//module specific breakpoints
+
+$bp-two-column: 850px;
+
+
+//maxheight specific
+//$bp-height-menu-desktop: 600px;
+
+@mixin screen($device-width, $type: max) {
+    @if $type == "min" {
+        @media screen and (min-width: px-to-em($device-width, $font-size-base)) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-width: px-to-em($device-width - 1, $font-size-base)) {
+            @content;
+        }
+    }
+}
+
+@mixin screen-height($device-height, $type: max) {
+    @if $type == "min" {
+        @media screen and (min-height: px-to-em($device-height, $font-size-base)) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-height: px-to-em($device-height - 1, $font-size-base)) {
+            @content;
+        }
+    }
+}

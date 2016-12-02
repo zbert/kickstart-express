@@ -1,0 +1,33 @@
+button,
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding:0;
+    margin: 0;
+    transition: $transition-default;
+}
+
+
+.btn-primary {
+    @include font-size-buttons();
+
+    &:hover {
+        
+    }
+}
+
+
+.btn-text-link {
+
+}
+
+
+.btn-text-load-more {
+    
+}
+
+@include screen($bp-mobile) {
+
+}

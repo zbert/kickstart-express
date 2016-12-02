@@ -1,0 +1,13 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: $ico-icon-name;
+  src: url('#{$ico-font-path}/skadden.eot?#{$ico-version}');
+  src: url('#{$ico-font-path}/skadden.eot?#{$ico-version}#iefix') format('embedded-opentype'),
+    url('#{$ico-font-path}/skadden.woff?#{$ico-version}') format('woff'),
+    url('#{$ico-font-path}/skadden.ttf?#{$ico-version}') format('truetype'),
+    url('#{$ico-font-path}/skadden.svg?#{$ico-version}#skadden') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

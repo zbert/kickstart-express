@@ -1,0 +1,24 @@
+
+
+<nav role="navigation" aria-labelledby="site-nav-title" id="site-nav" aria-hidden="true" class="site-nav js-site-nav" tabindex="-1">
+
+	<h2 id="site-nav-title" class="sr-only">Main Navigation</h2>
+
+	<div class="site-nav-wrapper">
+		<ul class="site-nav-menu">
+		{{#each siteMenu}}
+			<li class="site-nav-menu-item"><a title="Navigate to {{name}} section" class="site-nav-menu-link" href="{{url}}" tabindex="0">{{name}}</a></li>
+		{{/each}}
+		</ul>
+
+		<ul class="site-nav-submenu">
+		{{#each siteSubmenu}}
+			<li class="site-nav-submenu-item"><a title="Navigate to {{name}} section" class="site-nav-submenu-link" href="{{url}}" tabindex="0">{{name}}</a></li>
+		{{/each}}
+		</ul>
+
+		<!-- {{> components/social-links social-links}} -->
+	</div>
+
+	<button aria-label="Close Site Navigation" type="button" class="site-nav-close js-close"></button>
+</nav>

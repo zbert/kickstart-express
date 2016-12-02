@@ -1,0 +1,20 @@
+%uc {
+    text-transform: uppercase;
+}
+
+%list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-bottom: 0;
+    }
+}
+
+%hide-label {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	font-size: 0;
+}

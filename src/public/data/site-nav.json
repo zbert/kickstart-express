@@ -1,0 +1,113 @@
+{
+    "siteMenu": [
+        {
+            "url": "/capabilities-landing.html",
+            "name": "CAPABILITIES"
+        },
+        {
+            "url": "/professionals-landing.html",
+            "name": "PROFESSIONALS"
+        },
+        {
+            "url": "/insights-landing.html",
+            "name": "INSIGHTS"
+        }
+    ],
+    "siteSubmenu": [
+        {
+            "url": "/about-landing.html",
+            "name": "ABOUT"
+        },
+        {
+            "url": "/locations-landing.html",
+            "name": "LOCATIONS"
+        },
+        {
+            "url": "/careers-landing.html",
+            "name": "CAREERS"
+        }
+    ],
+    "social-links": {
+        "socialLinks": [
+            {
+                "icon": "linkedin",
+                "titleLabel": "Share on LinkedIn"
+            },
+            {
+                "icon": "twitter",
+                "titleLabel": "Share on twitter"
+            },
+            {
+                "icon": "facebook",
+                "titleLabel": "Share on facebook"
+            }
+        ]
+    },
+    "fellowship-site-loggedOut": {
+        "fellowshipSite": true,
+        "siteMenu": [
+            {
+                "url": "#0",
+                "name": "About the Foundation"
+            },
+            {
+                "url": "/foundation-fellows-directory",
+                "name": "Fellows Directory"
+            },
+            {
+                "url": "/foundation-news-stories",
+                "name": "News & Stories"
+            },
+            {
+                "url": "#0",
+                "name": "Application"
+            }
+        ],
+        "siteSubmenu": [
+            {
+                "url": "#0",
+                "name": "VIEW / EDIT MY PROFILE"
+            },
+            {
+                "url": "#0",
+                "name": "Login"
+            }
+        ]
+    },
+    "fellowship-site-loggedIn": {
+        "fellowshipSite": true,
+        "isUserLoggedIn": true,
+        "siteMenu": [
+            {
+                "url": "#0",
+                "name": "About the Foundation"
+            },
+            {
+                "url": "/foundation-fellows-directory",
+                "name": "Fellows Directory"
+            },
+            {
+                "url": "/foundation-news-stories",
+                "name": "News & Stories"
+            },
+            {
+                "url": "#0",
+                "name": "Application"
+            },
+            {
+                "url": "#0",
+                "name": "Community"
+            }
+        ],
+        "siteSubmenu": [
+            {
+                "url": "#0",
+                "name": "VIEW / EDIT MY PROFILE"
+            },
+            {
+                "url": "#0",
+                "name": "Logout"
+            }
+        ]
+    }
+}

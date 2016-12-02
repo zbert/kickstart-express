@@ -1,0 +1,183 @@
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin borderBox {
+    box-sizing: border-box;
+}
+
+@mixin display($display: block) {
+    display: $display;
+
+    @if ($display == inline-block and $legacy_support_for_ie) {
+        *display: inline;
+        zoom: 1;
+    }
+}
+
+/// Helper mixin to size elements
+/// @param {Number} $width - Width
+/// @param {Number} $height ($width) - Height
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin transition($property: all, $timing: $transition-timing, $easing: $transition-ease) {
+    transition: $property #{$timing} $easing;
+}
+
+@mixin bg-cover {
+  background:transparent no-repeat center center;
+  background-size: cover;
+}
+
+@mixin center($direction, $position: absolute) {
+
+
+  @if $position == 'relative' {
+    position: relative;
+  }
+
+  @else {
+    position: absolute;
+  }
+
+  @if $direction == 'vertical' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @else if $direction == 'horizontal' {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @else if $direction == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin design-mark($spacing: 25px, $font-size: 16px, $border-color: $color-brand-red , $placement: after, $position: relative ) {
+
+
+  @if $position == 'absolute' {
+    position: absolute;
+  }
+  @else {
+    position: relative;
+  }
+
+  @if $placement == 'before' {
+    &:before {
+      content: '';
+      display: block;
+      width: px-to-em($global-line-mark, $font-size);
+      border-top: $global-line-thickness solid $border-color;
+      padding-top: px-to-em($spacing, $font-size);
+      margin-top: px-to-em($spacing, $font-size);
+      @include transition(border-color);
+    }
+  }
+  @else {
+
+    &:after {
+      content: '';
+      display: block;
+      width: px-to-em($global-line-mark, $font-size);
+      border-top: $global-line-thickness solid $border-color;
+      padding-top: px-to-em($spacing, $font-size);
+      margin-top: px-to-em($spacing, $font-size);
+
+      @include transition(border-color);
+    }
+  }
+}
+
+@mixin absolute-full {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+//Mixin for placeholder text
+@mixin placeholder {
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}
+
+@mixin gradient($start-color: #555, $end-color: #333, $deg: 45deg, $spread: 100%) {
+  background-repeat: repeat-x;
+  background-image: linear-gradient($deg, $start-color, $end-color $spread); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+}
+
+@mixin gradient-overlay($start-color: rgba(0,0,0,0.3), $end-color: rgba(0,0,0,1), $direction: bottom, $position: before) {
+  &:#{$position} {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to $direction, $start-color, $end-color);
+  }
+}
+
+
+@mixin aspect-ratio($width: 100px, $height: 100px, $max-width: 100%) {
+    width: $max-width;
+    padding-top: ($height / $width) * 100%;
+}
+
+@mixin svg-ratio-preservation() {
+  $svg-ratio: 1280/800;
+  $svgWidth: 1280px;
+  $svgHeight: 800px;
+  $width-value: 100%;
+
+  position: absolute;
+  opacity: .5;
+
+
+    /**
+     * Padding hack for responsive control
+     * http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
+     *
+     */
+
+    height: 0;             /* collapse the container's height */
+    width: $width-value;    /* specify any width you want (a percentage value, basically) */
+    /* apply a padding using the following formula */
+    /* this formula makes sure the aspect ratio of the container equals that of the svg graphic */
+    padding-top: $svg-ratio * $width-value;
+
+    svg {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%) translateZ(0);
+    }
+}
+
+@mixin columns($columns: 2, $spacing: $default-column-spacing) {
+  columns: $columns auto;
+  column-gap: $spacing;
+}
+
+@mixin column-item($spacing: $default-column-spacing) {
+  padding-bottom: $spacing;
+  break-inside: avoid;
+  // overflow: hidden;
+}

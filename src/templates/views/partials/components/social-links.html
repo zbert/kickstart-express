@@ -1,0 +1,13 @@
+
+
+<ul class="social-links">
+	{{#each socialLinks}}
+		<li class="social-links-item"><a title="{{titleLabel}}" class="social-links-icon ico-{{icon}}" href="#0" tabindex="0"></a></li>
+	{{/each}}
+
+	{{#if share-tooling}}
+	<li class="social-links-item">
+		{{> components/share-tools share-tooling}}
+	</li>
+	{{/if}}
+</ul>

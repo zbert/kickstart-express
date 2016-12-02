@@ -1,0 +1,69 @@
+$header-padding: px-to-em(80px);
+$header-padding-mobile: $header-padding/2;
+
+.page-header {
+	
+}
+
+
+@include screen($bp-mobile) {
+	// .page-header {
+	// 	padding: $header-padding-mobile 0;
+	// }
+
+	// .page-header-title {
+	// 	font-size: px-to-em($header-font-size-mobile);
+	// 	text-align: center;
+	// }
+
+	// .page-header-user-actions {
+	// 	margin-top: 1em;
+	// }
+
+	// .page-header-title--interior {
+	// 	color: $color-brand-black;
+	// 	margin-bottom: px-to-em($section-spacing-mobile-px, $header-font-size-mobile)
+	// }
+
+	// .page-header--fellowship {
+	// 	padding-top: $header-padding-mobile/2;
+
+	// 	.breadcrumbs {
+	// 		padding-bottom: $header-padding-mobile/2;;
+	// 	}
+
+	// 	.breadcrumbs-title {
+	// 		font-size: 1em;
+	// 	}
+	// }
+
+	// .social-links {
+
+	// 	.page-header & {
+	// 		$spacing: 30px;
+
+	// 		position: relative;
+	// 		top:auto;
+	// 		right: auto;
+	// 		display: inline-block;
+	// 		margin-top: 1em;
+	// 		vertical-align: middle;
+
+	// 		.social-links-item {
+	// 			display: inline-block;
+	// 			margin-bottom: 0;
+	// 			width: px-to-em(45px);
+	// 			text-align: left;
+
+	// 		}
+
+	// 		.ico-pdf {
+	// 			font-size: px-to-em(20px);	
+	// 		}
+
+	// 		.ico-share {
+	// 			font-size: px-to-em(20px);		
+	// 		}
+	// 	}
+	// }
+}

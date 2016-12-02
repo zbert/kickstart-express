@@ -1,0 +1,18 @@
+
+{{else}}
+<header class="page-header
+	{{#if fellowshipSite}}page-header--fellowship{{/if}}
+	{{#if bgUrl}}page-header--banner{{/if}}"
+
+	{{#if bgUrl}} style="background-image: url('{{bgUrl}}')" {{/if}}>
+
+	<div class="page-wrapper">
+		{{#if fellowshipBreadcrumbs}}
+			{{> components/breadcrumbs fellowshipBreadcrumbs }}
+		{{/if}}
+
+		<h1 class="page-header-title">{{pageTitle}}</h1>		
+	</div>
+	
+</header>
+

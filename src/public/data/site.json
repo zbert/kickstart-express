@@ -1,0 +1,14 @@
+{
+  "title": "Skadden",
+  "description": "[Your site description should be here]",
+  "copyright": "Copyright ©2016 Skadden",
+  "homeUrl": "/index.html",
+  "siteLogoUrl": "./public/images/logo.svg",
+  "foundationSiteLogoUrl": "./public/images/foundation-logo.svg",
+  "foundationSiteName": "Skadden Foundation",
+  "firmFullName": "Skadden, Arps, Slate, Meagher & Flom LLP and Affiliates",
+  "searchbox": {
+  	"customClasses": "site-search-panel-searchbox js-searchbox",
+  	"placeholder": "Search"
+  }
+}

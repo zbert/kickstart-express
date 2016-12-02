@@ -1,0 +1,69 @@
+// .mobile-toggle {
+// 	width: $site-header-ui-width;
+// 	height: px-to-em($site-header-height);
+// 	background-color: $color-brand-black;
+// 	text-align: center;
+// 	border-color:  $color-brand-black;
+// 	color: $color-brand-white;
+// 	transition: background-color $transition-timing ease-in-out;
+
+// 	&:hover {
+// 		background-color: $color-black;
+// 	}
+// }
+
+// .mobile-toggle-bars {
+// 	$bars-height: px-to-em(2px);
+// 	$bars-width: px-to-em(28px);
+// 	$bars-spacing: px-to-em(6px);
+
+// 	display: inline-block;
+// 	width: $bars-width;
+// 	height: $bars-height;
+// 	background-color: $color-brand-gray;
+// 	position: relative;
+
+// 	&:before,
+// 	&:after {
+// 		content: '';
+// 		display: block;
+
+// 		background-color:$color-brand-gray;
+// 		height: 100%;
+// 		width: 100%;
+
+// 		position: absolute;
+// 		bottom: 100%;
+// 		transform: translateZ(0);
+// 	}
+
+
+// 	&:before {
+// 		margin-bottom: $bars-spacing;
+
+// 	}
+
+// 	&:after {
+// 		margin-bottom: $bars-spacing * 2 + $bars-height;
+// 	}
+// }
+
+// .mobile-toggle-label {
+// 	@extend %uc;
+
+// 	font-size: px-to-em(18px);
+// 	letter-spacing: .25em;
+// 	margin-left: 0.5em;
+// 	vertical-align: bottom;
+// }
+
+// @include screen($bp-mobile) {
+// 	.mobile-toggle-bars {
+// 		background-color: $color-brand-white;
+		
+// 		&:before,
+// 		&:after {
+// 			background-color: $color-brand-white;
+// 		}
+// 	}
+// }
