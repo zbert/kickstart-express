@@ -1,29 +1,12 @@
 
-
 <footer class="site-footer js-site-footer">
 
-	<div class="content-wrapper">
+	<ul class="site-footer-menu">
+	{{#each footerMenu}}
+		<li class="site-footer-menu-item"><a  class="site-footer-menu-link" href="#">{{name}}</a></li>
+	{{/each}}
+	</ul>
 
-		<ul class="site-footer-menu">
-		{{#each footerMenu}}
-			<li class="site-footer-menu-item"><a  class="site-footer-menu-link" href="#">{{name}}</a></li>
-		{{/each}}
-		</ul>
-
-		<div class="site-footer-additional">
-
-			<ul class="site-footer-utility">
-				<li class="site-footer-utility-item">
-					<a title="Navigate to Alumni Login section" class="site-footer-utility-link" href="#">Alumni Login</a></li>
-				</li>
-				<li class="site-footer-utility-item">
-					<a title="Navigate to Skadden Foundation section" class="site-footer-utility-link" href="#">Skadden Foundation<i class="ico ico-upward-arrow"></i></a></li>
-				</li>
-			</ul>
-
-			<!-- {{> components/social-links social-links}} -->
-		</div>
-
-	</div>
-
+	{{> components/social-links social-links}}
+	
 </footer>

@@ -8,15 +8,11 @@ $font-size-base: 16px;
 $font-size-copy: 24px;
 $font-size-copy-mobile: 18px;
 
-$font-line-height: 1.5;
+$base-line-height: 1.5;
 
 //Main Font Univers
-$font-family-univers-condensed-oblique: "UniversLTStd-CnObl";
-$font-family-univers-condensed-bold-oblique: "UniversLTStd-BoldCnObl";
-$font-family-univers-condensed-light: "UniversLTStd-LightCn";
-$font-family-univers-condensed-light-oblique: "UniversLTStd-LightCnObl";
 $font-family-univers-condensed: "UniversLTStd-Condensed";
-$font-family-univers-condensed-bold: "UniversLTStd-CondensedBold";
+
 
 
 
@@ -55,9 +51,9 @@ $section-spacing-large-mobile-px: 50px;
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-$site-max-width: 1168px; //old 1050px
+$site-max-width: 1168px; 
 
-$content-max-width: 960px; //old 1050px
+$content-max-width: 960px; 
 
 $site-padding: 40px;
 $site-padding-px: $site-padding;
@@ -68,14 +64,11 @@ $site-padding-mobile-px: $site-padding-mobile;
 $site-header-height: 70px;
 $site-header-height-mobile: 60px;
 
-$default-column-spacing: 2px;
-
 ///////////////////////////////////////////////////////////////////////////////
 //
 //  Component/Module Variables
 //
 ///////////////////////////////////////////////////////////////////////////////
-$global-line-thickness: 3px;
 
 //listing related
 $listing-padding: 32px;
@@ -103,7 +96,7 @@ $easeInOutCirc:                     cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
 
 $transition-timing: .35s;
-$transition-ease: $easeInOutQuint;
+$transition-ease: $easeInOutCirc;
 
 
 $transition-default:            color $transition-timing $transition-ease,
@@ -124,7 +117,7 @@ $zindex-modal-bg:                   1000;
 $zindex-modal-body:                 1005;
 
 
-$zindex-site-header:               500;
-$zindex-site-search-panel:					$zindex-site-header - 50;
+$zindex-site-header:               	500;
+$zindex-site-search-panel:			$zindex-site-header - 50;
 
 $zindex-loading-screen:             $zindex-site-header - 10;

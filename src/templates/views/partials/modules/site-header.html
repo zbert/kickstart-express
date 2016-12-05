@@ -1,6 +1,4 @@
-
-
-<header class="site-header js-site-header {{#if breadcrumbs}}site-header--perspective{{/if}}">
+<header class="site-header js-site-header">
 
 	<a class="site-logo" href="/">
 		<img alt="{{@root.site.firmFullName}}" class="site-logo-img" src="{{@root.site.siteLogoUrl}}">
@@ -12,13 +10,11 @@
 			<span  class="site-header-firm-name">{{@root.site.firmFullName}}</span>
 		</div>
 
-		{{#if breadcrumbs}}
-			{{> components/breadcrumbs breadcrumbs }}
-		{{/if}}
-
 	</div>
 
-	<!-- {{> components/site-search-toggle}} -->
+	{{#if breadcrumbs}}
+		{{> components/breadcrumbs breadcrumbs }}
+	{{/if}}
 
 	{{> components/menu-toggle}}
 

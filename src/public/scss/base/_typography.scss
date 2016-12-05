@@ -16,6 +16,7 @@ $font-size-h2: 52px;
 $font-size-h3: 32px;
 $font-size-h4: 24px;
 $font-size-h5: 20px;
+
 //copy-mobile
 $font-size-h1-mobile: 40px;
 $font-size-h2-mobile: 36px;
@@ -35,13 +36,13 @@ $font-size-subheading-mobile: 30px;
 $font-size-buttons-mobile: 18px;
 
 
-@mixin font-univers-condensed($font-size: null, $base-size: null){
-    font-family: $font-family-univers-condensed;
+// @mixin font-univers-condensed($font-size: null, $base-size: null){
+//     font-family: $font-family-univers-condensed;
 
-    @if ($font-size != null){
-        @include font-size($font-size, $base-size);
-    }
-}
+//     @if ($font-size != null){
+//         @include font-size($font-size, $base-size);
+//     }
+// }
 
 
 @mixin font-size-buttons () {
@@ -57,6 +58,7 @@ $font-size-buttons-mobile: 18px;
 @mixin font-size-copy-text () {
     font-family: $font-family-copy;
     font-size: px-to-em($font-size-copy);
+    line-height: $base-line-height;
 
     @include screen($bp-mobile) {
         font-size: px-to-em($font-size-copy-mobile);
@@ -67,7 +69,7 @@ $font-size-buttons-mobile: 18px;
 body {
     font-size: 100%;
     font:normal 100% $font-family-primary, Arial, sans-serif;
-    line-height: 1.15;
+    line-height: 1.2;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: $color-text-copy;

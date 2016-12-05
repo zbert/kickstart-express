@@ -1,0 +1,17 @@
+.social-links {
+	margin: 0;
+}
+
+.social-links-item {
+	display: inline;
+}
+
+.social-links-icon {
+	color: $color-brand-white;
+}
+
+.social-links-icon {
+	&:before {
+		@include ico-icon();
+	}
+}

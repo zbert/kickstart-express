@@ -21,42 +21,5 @@
                 "titleLabel": "Share on LinkedIn"
             }
         ]
-    },
-    "fellowship-site-loggedOut": {
-        "fellowshipSite": false,
-        "footerMenu": [
-            {"name": "About the Foundation"},
-            {"name": "Fellows Directory"},
-            {"name": "News & Stories"},
-            {"name": "Application"},
-            {"name": "Community"}
-        ],
-        "social-links": {
-            "socialLinks": [
-                {
-                    "icon": "linkedin",
-                    "titleLabel": "Share on LinkedIn"
-                }
-            ]
-        }
-    },
-    "fellowship-site-loggedIn": {
-        "isUserLoggedIn": true,
-        "fellowshipSite": true,
-        "footerMenu": [
-            {"name": "About the Foundation"},
-            {"name": "Fellows Directory"},
-            {"name": "News & Stories"},
-            {"name": "Application"},
-            {"name": "Community"}
-        ],
-        "social-links": {
-            "socialLinks": [
-                {
-                    "icon": "linkedin",
-                    "titleLabel": "Share on LinkedIn"
-                }
-            ]
-        }
     }
 }
